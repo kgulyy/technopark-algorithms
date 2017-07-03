@@ -12,12 +12,12 @@ using namespace std;
 
 /**
  * Вычисление суммы дробей
- * @param a числитель 1й дроби
- * @param b знаменатель 1й дроби
- * @param c числитель 2й дроби
- * @param d знаменатель 2й дроби
- * @param n числитель результирующей дроби
- * @param m знаменатель результирующей дроби
+ * @in a числитель 1й дроби
+ * @in b знаменатель 1й дроби
+ * @in c числитель 2й дроби
+ * @in d знаменатель 2й дроби
+ * @out n числитель результирующей дроби
+ * @out m знаменатель результирующей дроби
  */
 void calc(int a, int b, int c, int d, int& n, int& m);
 // Вычисление НОК
@@ -40,7 +40,7 @@ int main() {
 }
 
 void calc(int a, int b, int c, int d, int& n, int& m) {
-  // вычисление общего знаменателя
+  // Вычисление общего знаменателя
   int denominator = lcm(b, d);
 
   assert(b);
@@ -51,7 +51,7 @@ void calc(int a, int b, int c, int d, int& n, int& m) {
 
   int numerator = firstMultiplier * a + secondMultiplier * c;
 
-  // вычисления НОД для числителя и знаменателя
+  // Вычисление НОД для числителя и знаменателя
   int divisor = gcd(numerator, denominator);
 
   assert(divisor);
