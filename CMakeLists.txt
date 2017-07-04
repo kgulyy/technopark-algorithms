@@ -12,3 +12,4 @@ add_subdirectory(module_1/7_2_task)
 
 # 2nd module
 add_subdirectory(module_2/1_1_task)
+add_subdirectory(module_2/2_2_task)
