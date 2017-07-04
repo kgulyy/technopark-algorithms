@@ -18,3 +18,6 @@ add_subdirectory(module_2/4_1_task)
 add_subdirectory(module_2/5_3_task)
 add_subdirectory(module_2/6_3_task)
 add_subdirectory(module_2/7_task)
+
+# 3rd module
+add_subdirectory(module_3/1_1_task)
